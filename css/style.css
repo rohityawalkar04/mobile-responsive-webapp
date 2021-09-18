@@ -1,0 +1,303 @@
+/* initially add margin and padding 0 to all content in *{} just to reset everything */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+  transition: all 0.7s ease-out;
+}
+
+.logo{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.logo img{
+  width: 60px;
+  margin: 10px;
+  border: 3px solid white;
+  border-radius: 50px;
+}
+
+.nav-list{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li{
+  list-style: none;
+  padding: 20px 30px;
+}
+
+.nav-list li a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-list li a:hover{
+  color: grey;
+}
+
+.rightNav{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search{
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  outline: none;
+}
+
+.background{
+  background: rgba(0,0,0,0.7) url('../images/city_buildings_lights.jpg');
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.nav-background{
+  background: rgba(0,0,0,0.7) url('../images/nasa-Q1p7bh3SHj8-unsplash.jpg');
+  background-size: cover;
+  background-blend-mode: exclusion;
+}
+
+.box-main{
+  display: flex;
+  justify-content: center;
+  height: 90%;
+  align-items: center;
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 50%;
+  margin: auto;
+}
+
+.firstSection{
+  height: 100vh;
+  margin-top: -70px;
+}
+
+.firstHalf{
+  margin-right: 5%;
+  width: 80%;
+}
+
+/* .secondHalf{
+  width: 30%;
+} */
+
+.secondHalf img{
+  width: 150px;
+  display: block;
+  margin: auto;
+  border: 4px solid white;
+  border-radius: 80px;
+  height: 150px;
+}
+
+.text-big{
+  font-size: 41px;
+}
+
+.text-small{
+  font-size: 18px;
+  padding: 7px 0px;
+}
+
+.btn{
+  padding: 8px 20px;
+  margin: 8px 3px;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.btn:hover{
+  background-color: grey;
+  color: white;
+}
+
+.btn-sm{
+  padding: 3px 10px;
+}
+
+.section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 60%;
+  margin: 70px auto;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.section-left{
+  flex-direction: row-reverse;
+}
+
+.paras{
+  width: 70%;
+  padding: 0px 24px;
+}
+
+.sectionTag{
+  padding: 10px 0px;
+}
+
+.sectionSubTag{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+.thumbnail img{
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 26px;
+  margin: 25px 30px;
+}
+
+.contact{
+  background-color: #f6f5f4;
+  height: 600px;
+}
+
+.text-center{
+  text-align: center;
+  padding: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 35px;
+}
+
+.form{
+  max-width: 60%;
+  margin: auto;
+}
+
+.form-input{
+  width: 100%;
+  padding: 8px 5px;
+  font-size: 14px;
+  margin: 14px 0px;
+  outline: none;
+  border: 2px solid lightgrey;
+  border-radius: 6px;
+  resize: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-dark{
+  color: grey;
+  border: lightgrey 2px solid;
+}
+
+.text-footer{
+  text-align: center;
+  padding: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.burger{
+  cursor: pointer;
+  position: absolute;
+  display: none;
+  right: 20px;
+  top: 15px;
+}
+
+.burger:hover{
+  background-color: grey;
+}
+
+.line{
+  width:18px;
+  background-color: white;
+  height: 2px;
+  margin: 4px 4px;
+}
+
+@media only screen and (max-width:1290px){
+  .section{
+    height: none;
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width:932px){
+  .section{
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 835px){
+  .box-main{
+    flex-direction: column-reverse;
+    text-align: justify;
+    max-width: 80%;
+    height: 100%;
+  }
+
+  .firstHalf{
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 1040px){
+  .nav-list{
+    flex-direction: column;
+  }
+  .navbar{
+    flex-direction: column;
+    height: 500px;
+  }
+
+  .rightNav{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .burger{
+    display: block;
+  }
+
+  .h-nav-resp{
+    height: 50px;
+  }
+
+  .v-class-resp{
+    opacity: 0;
+  }
+}

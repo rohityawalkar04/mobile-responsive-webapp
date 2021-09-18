@@ -1,0 +1,150 @@
+<!-- used '!' for boiler code for website and installed live server and on down you can see go live option -->
+<!-- typed nav.navbar and enter then it will automatically create a nav tag with navbar class_name -->
+<!-- this is emit .. what it does .. if we type anything (.visible or .any) create a div with that class  -->
+<!-- if typed ul.visible will create ul tag with visible class name -->
+<!-- if added ul.nav-list.another will create ul with classnames 'nav-list another' -->
+<!-- you can do li*4 to create 4 li's 1 below 1 -->
+<!-- whenever we click on About link it will scroll to the element whose id is #about -->
+<!-- image alt is for if it is not possible to load logo image for some net issue the text in alt be shown -->
+<!-- link.css for css file insertion in index.html file -->
+<!-- to a parent tag if we do display:flex; align-items:center; justify-content:center; then there is no need to add margin:auto;-->
+<!-- you can use background-blend-mode to darken or lighten the image -->
+<!-- and in background url can add the image url -->
+<!-- DRY .. do not repeat yourself -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <title>iEducate - Transforming Online Education</title>
+</head>
+
+<body>
+
+  <nav class="navbar nav-background h-nav-resp">
+    <ul class="nav-list v-class-resp">
+      <div class="logo"><img src="images/small_laptop.jpeg" alt="image"></div>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <div class="rightNav v-class-resp">
+      <input type="text" name="search" id="search">
+      <button class="btn btn-sm">Search</button>
+    </div>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </nav>
+
+  <section class="background firstSection" id="home">
+    <div class="box-main">
+      <div class="firstHalf">
+        <p class="text-big">
+          The Future is Here
+        </p>
+        <p class="text-small">
+          Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals,
+          beliefs, and habits.
+        </p>
+        <div class="buttons">
+          <button class="btn">Subscribe</button>
+          <button class="btn">Watch Videos</button>
+        </div>
+      </div>
+      <div class="secondHalf">
+        <img src="images/small_laptop.jpeg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="paras">
+      <p class="sectionTag text-big">End of Illiteracy is here</p>
+      <p class="sectionSubTag text-small">Education is the process of facilitating learning, or the acquisition of
+        knowledge, skills, values, morals, beliefs, and habits. Educational methods include teaching, training,
+        storytelling, discussion and directed research. Education frequently takes place under the guidance of
+        educators, however learners can also educate themselves. Education can take place in formal or informal settings
+        and any experience that has a formative effect on the way one thinks
+      </p>
+      <p class="sectionSubTag text-small">
+        Choice and affordability for the poor: Parents can choose private schools because of perceptions of
+        better-quality teaching and facilities, and an English language instruction preference. Nevertheless,
+        the concept of 'choice' does not apply in all contexts.
+      </p>
+    </div>
+    <div class="thumbnail">
+      <img src="https://source.unsplash.com/900x900/?coding,apple" alt="Laptop" class="imgFluid">
+    </div>
+  </section>
+
+  <section class="section section-left">
+    <div class="paras">
+      <p class="sectionTag text-big">Evidence-based education</p>
+      <p class="sectionSubTag text-small">Choice and affordability for the poor: Parents can choose private schools
+        because of perceptions of better-quality teaching and facilities, and an English language instruction
+        preference. Nevertheless, the concept of 'choice' does not apply in all contexts.
+      </p>
+      <p class="sectionSubTag text-small">
+        Equity: This concern is widely found in the literature, suggesting the growth in low-cost private schooling may
+        be exacerbating or perpetuating already existing inequalities in developing countries, between urban and rural
+        populations, lower- and higher-income families.
+      </p>
+    </div>
+    <div class="thumbnail">
+      <img src="https://source.unsplash.com/900x900/?coding,apple,html" alt="Laptop" class="imgFluid">
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paras">
+      <p class="sectionTag text-big">A survey of literature of the research</p>
+      <p class="sectionSubTag text-small">Education began in prehistory, as adults trained the young in the knowledge
+        and skills deemed necessary in their society. In pre-literate societies, this was achieved orally and through
+        imitation. Story-telling passed knowledge, values, and skills from one generation to the next. As cultures began
+        to extend their knowledge beyond skills that could be readily learned through imitation, formal education
+        developed. Schools existed in Egypt at the time of the Middle Kingdom.
+      </p>
+      <p class="sectionSubTag text-small">
+        Quality and educational outcomes: It is difficult to generalize about the quality of private schools. While
+        most achieve better results than government counterparts, even after their social background is taken into
+        account, some studies find the opposite.
+      </p>
+    </div>
+    <div class="thumbnail">
+      <img src="https://source.unsplash.com/900x900/?javascript,coding,apple" alt="Laptop" class="imgFluid">
+    </div>
+  </section>
+
+  <hr />
+
+  <section class="contact" id="contact">
+    <h1 class="text-center">Contact Us</h1>
+    <div class="form">
+      <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name">
+      <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+      <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your Email">
+      <textarea class="form-input" name="text" id="text" cols="30" rows="10" class="text"
+        placeholder="Elaborate your concerns"></textarea>
+      <button class="btn btn-dark btn-sm">Submit</button>
+    </div>
+  </section>
+
+  <footer>
+    <p class="text-footer background">
+      Copyright &copy; 2021 www.ieducate.com - All rights reserved
+    </p>
+  </footer>
+</body>
+
+
+</html>
